@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dockguard"
+version = "0.1.0"
+authors = [
+  { name="Kimberly Washington", email="hiokeke26@gmail.com" },
+]
+description = "Fast, lightweight Dockerfile static analysis and security linter."
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.scripts]
+dockguard = "dockguard.cli:main"
